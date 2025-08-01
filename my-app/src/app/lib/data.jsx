@@ -1,4 +1,4 @@
-export const data = [
+const data5 = [
     {
         id : 1,
         title : "first-episode",
@@ -9,4 +9,6 @@ export const data = [
         title : "second-episode",
         context : "lorem loerem lorem lorem lorem lorem lorem loremm lorem ",
     }
-]
+];
+
+export default data5;
