@@ -6,7 +6,7 @@ export default function Blog() {
     <ul>
       {data5.map((a) => (
         <li key={a.id}>
-          <Link href = {`Blog/${a.title}`}>{a.title}</h1>
+          <Link href = {`Blog/${a.title}`}>{a.title}</Link>
         </li>
       ))}
     </ul>
