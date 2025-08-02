@@ -12,10 +12,10 @@ export default function BlogCards() {
                 <li key={index} className="bg-white p-4 rounded-md shadow-md">
                 <h1 style = {{"fontSize" : "25px", "color" : "black", "fontWeight": "bold"}}>{blog.title}</h1>
                 <button 
-                    className="w-full bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200"
+                    className="w-full p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200"
                 >
                 <Link 
-                    className="mt-4  block text-lg font-semibold text-black mb-4"
+                    className="  block text-lg font-semibold text-white "
                     href={`Blog/${blog.title}`}
                 >
                 Read more
