@@ -7,6 +7,7 @@ export default function AboutPage() {
             <p>FullName : Mohsen Malekifard</p>
             <p>Email : mohsenmaleki1389@gmail.com</p>
             <p>GitHub Address: github.com/Mohsen-Malekifard</p>
+            <p>Updated</p>
 
         </>
     )
