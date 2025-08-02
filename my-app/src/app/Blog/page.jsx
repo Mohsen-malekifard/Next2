@@ -3,12 +3,6 @@ import Link from "next/link";
 
 export default function Blog() {
   return (
-    <ul>
-      {data5.map((a) => (
-        <li key={a.id}>
-          <Link href = {`Blog/${a.title}`}>{a.title}</Link>
-        </li>
-      ))}
-    </ul>
+    
   );
 }
