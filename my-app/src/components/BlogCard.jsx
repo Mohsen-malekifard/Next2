@@ -1,12 +1,12 @@
 import data5 from "@/app/lib/data";
 import Link from "next/link";
 
-const found = data5.find(blog => blog.id < "5");
+const finded = data5.find(blog => blog.id < "5");
 
 export default function BlogCard() {
     return (
         <ul className="grid grid-cols-2 gap-4">
-            {found.map((blog, index) => (
+            {finded.map((blog, index) => (
                 <li key={index} className="bg-white p-4 rounded-md shadow-md">
                 <h1 style = {{"fontSize" : "25px", "color" : "black", "fontWeight": "bold"}}>{blog.title}</h1>
                 <button 
