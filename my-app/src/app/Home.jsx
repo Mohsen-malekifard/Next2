@@ -2,7 +2,9 @@ import BlogCard from "@/components/BlogCard";
 import Link from "next/link";
 
 export default function HomePage() {
-
+    // function ClicktoLoading() {
+        
+    // }
     return (
         <>
             <h1 style = {{"fontSize" : "50px"}}>Welcome to my blog site</h1>
