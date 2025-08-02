@@ -7,6 +7,7 @@ export default function getDetails({params}) {
         <>
             <h1>{found.title}</h1>
             <h1>{found.context}</h1>
+            <Link href = "../Blog">Back</Link>
         </>
     )
 }
