@@ -1,7 +1,7 @@
 import data5 from "@/app/lib/data";
 import Link from "next/link";
 
-const found = data5.find((data) => data.id < 5);
+const found = data5.find(blog => blog.id < "5");
 
 export default function BlogCard() {
     return (
