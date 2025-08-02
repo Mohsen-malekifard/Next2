@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Blog() {
   return (
     <>
-      <h1>Blog Page</h1>
+      <h1 style = {{"fontSize" : "50px"}}>Blog Page</h1>
       <ul>
         {data5.map((blog, index) => (
             <li key = {index} >
