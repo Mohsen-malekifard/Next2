@@ -1,7 +1,7 @@
 import data5 from "@/app/lib/data";
 import Link from "next/link";
 
-const finded = data5.find(blog => blog.id < "5");
+const finded = data5.filter(blog => blog.id < "5");
 
 export default function BlogCard() {
     return (
