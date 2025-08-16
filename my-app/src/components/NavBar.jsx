@@ -1,54 +1,53 @@
 import React from 'react';
+import { Home, Info, Rss } from 'lucide-react';
 
-// کامپوننت Header ثابت
-// این کامپوننت شامل سه دکمه Home, Cart و ProductsList است
-// و با استفاده از Tailwind CSS طراحی شده است.
-// برای استفاده در یک پروژه Next.js، می توانید این فایل را در پوشه components/ قرار دهید.
-
+// A modern and stylish navigation bar component
 const NavBar = () => {
   return (
-    // نوار ناوبری ثابت در بالای صفحه با پس‌زمینه تیره و سایه
-    <header className="sticky top-0 z-50 w-full bg-gray-900 p-4 shadow-lg">
-      <nav className="flex items-center justify-between mx-auto max-w-7xl">
-        
-        {/* لوگو یا نام سایت - فعلا به عنوان مثال */}
-        <div className="text-2xl font-bold text-gray-50 tracking-wider">
-          My App
+    // Fixed navigation bar at the top of the page with a clean, modern design
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-2xl">
+      <nav className="flex items-center justify-between p-4 bg-white rounded-full shadow-md">
+
+        {/* Website logo or name with a professional look */}
+        <div className="text-lg font-bold text-gray-800 tracking-wider">
+          <span className="text-blue-600">Sleek</span>App
         </div>
 
-        {/* دکمه‌های ناوبری */}
-        <ul className="flex space-x-6 sm:space-x-8">
-          {/* دکمه Home */}
+        {/* Navigation links with icons and hover effects */}
+        <ul className="flex space-x-4">
+          {/* Home button */}
           <li>
-            {/* در یک پروژه واقعی Next.js، از next/link به جای تگ a استفاده کنید. */}
-            <a 
+            <a
               href="/"
-              className="font-medium text-gray-300 hover:text-white transition-colors duration-300
-                         hover:bg-gray-700 px-4 py-2 rounded-lg"
+              className="flex items-center gap-1.5 font-medium text-gray-600 hover:text-blue-600
+              transition-colors duration-300 rounded-full py-2 px-4 group"
             >
-              Home
+              <Home className="w-5 h-5 group-hover:text-blue-600 transition-colors" />
+              <span>Home</span>
             </a>
           </li>
-          
-          {/* دکمه Cart */}
+
+          {/* About button */}
           <li>
-            <a 
+            <a
               href="/About"
-              className="font-medium text-gray-300 hover:text-white transition-colors duration-300
-                         hover:bg-gray-700 px-4 py-2 rounded-lg"
+              className="flex items-center gap-1.5 font-medium text-gray-600 hover:text-blue-600
+              transition-colors duration-300 rounded-full py-2 px-4 group"
             >
-              About
+              <Info className="w-5 h-5 group-hover:text-blue-600 transition-colors" />
+              <span>About</span>
             </a>
           </li>
-          
-          {/* دکمه ProductsList */}
+
+          {/* Blog button */}
           <li>
-            <a 
+            <a
               href="/Blog"
-              className="font-medium text-gray-300 hover:text-white transition-colors duration-300
-                         hover:bg-gray-700 px-4 py-2 rounded-lg"
+              className="flex items-center gap-1.5 font-medium text-gray-600 hover:text-blue-600
+              transition-colors duration-300 rounded-full py-2 px-4 group"
             >
-              Blog
+              <Rss className="w-5 h-5 group-hover:text-blue-600 transition-colors" />
+              <span>Blog</span>
             </a>
           </li>
         </ul>
@@ -56,5 +55,4 @@ const NavBar = () => {
     </header>
   );
 };
-
 export default NavBar;
