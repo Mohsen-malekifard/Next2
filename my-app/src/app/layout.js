@@ -12,7 +12,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <NavBar/>
-        {children}
+        <div  style={{"paddingTop" : "100px"}} >
+          {children}
+        </div>
       </body>
     </html>
   );
